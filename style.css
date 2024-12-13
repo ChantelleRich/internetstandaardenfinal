@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Frank+Ruhl+Libre:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Spicy+Rice&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* Navigation bar */
+/* For the navigation bar, i didn't directly copy/ paste the code but, i used a combination of flexbox, prevoiusly used codes and i saw a video on youtube.
+Bron: https://youtu.be/-Yw9gBHE60E?si=hc3Rs63RS4zbgHrc */
+header {
+    width: 100%;
+    background-color: hsl(342, 100%, 77%);
+    padding: 2em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav div {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: "Poppins", serif;
+    color: black;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin-right: 2em;
+}
+
+nav a {
+    color: black;
+    font-size: 1.5em;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    padding: 1em;
+    border-radius: 2em;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: white;
+    background-color: hsl(342, 66%, 54%);
+}
+
+.currentpage {
+    color: white;
+    background-color: hsl(307, 44%, 50%);
+}
+
+/* Main, Body and text (h1,h2,h3,p)  */
+main {
+    text-align: center;
+    padding: 1em;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-size: 4em;
+}
+
+h2 {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-size: 2.6em;
+    line-height: 1.8em;
+}
+
+h3 {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-size: 2.1em;
+    margin-bottom: 1.5em;
+}
+
+p {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+/* Home page */
+/* At first i asked Chatgpt to code a pretty layout for the episode section but it gave me very detailed and complex codes that i didn't fully understand.
+So, i thought to just edit the codes like a amateur but in a way that still made it look appealing.
+Prompt:Can you code a featured episode section?
+AI:ChatGPT v 4o*/
+section h1 {
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+.featured-episodes {
+    text-align: center;
+    padding: 4em 2em;
+    background-color: #fff;
+}
+
+.featured-episodes h2 {
+    font-size: 2.5em;
+    margin-bottom: 2em;
+    font-family: "Poppins", serif;
+    font-weight: bold;
+}
+
+.episodes-banner {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    flex-wrap: wrap;
+    padding: 2em;
+    background-color: rgb(255, 255, 139);
+    border-radius: 2em;
+}
+
+.episodes-banner div {
+    width: 30%;
+    border-radius: 1em;
+    text-align: center;
+}
+
+.episodes-banner img {
+    max-width: 100%;
+    border-radius: 0.5em;
+}
+
+.episodes-banner h3 {
+    font-size: 2em;
+    margin: 1em 0;
+}
+
+.episodes-banner p {
+    font-size: 1.37em;
+    font-family: "Poppins", serif;
+    margin-bottom: 1em;
+}
+
+section div a {
+    padding: 0.5em;
+    background-color: hsl(342, 75%, 50%);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 2em;
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: "Poppins", serif;
+    transition: all 0.3s ease;
+}
+
+section div a {
+    color: black;
+    text-align: center;
+}
+
+section div a:hover {
+    color: rgb(255, 255, 255);
+    background-color: hsl(336, 85%, 34%);
+}
+
+/* Bron: w3schools, How TO- Rounded images
+link: https://www.w3schools.com/howto/howto_css_rounded_images.asp */
+section div img {
+    width: 25em;
+    height: 25em;
+    border-radius: 50%;
+    padding-bottom: 1em;
+}
+
+.call-to-action {
+    padding: 0.5em;
+    background-color: hsl(342, 75%, 50%);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 2em;
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: "Poppins", serif;
+    transition: all 0.3s ease;
+}
+
+.call-to-action {
+    color: black;
+    text-align: center;
+}
+
+.call-to-action:hover {
+    color: rgb(255, 255, 255);
+    background-color: hsl(336, 85%, 34%);
+}
+
+
+/* Episode page */
+article h2 {
+    font-size: 2.5em;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+article img {
+    width: 28%;
+    border-radius: 1em;
+}
+
+/* About us page */
+/* For this one i also asked ChatGPT for help but again it gave me very complex codes so edit/removed most but stayed with the layout
+Prompt: How would you design the meet the team?
+Ai: ChatGPT v 4o*/
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    flex-wrap: wrap;
+}
+
+.team-members img {
+    width: 30em;
+    height: 30em;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team-members h3 {
+    font-size: 2.5em;
+    margin-bottom: 0.7em;
+    color: #181818;
+    font-weight: 600;
+}
+
+.team-members p {
+    font-size: 1.25em;
+    color: #292929;
+    line-height: 1.5;
+    margin-bottom: 2em;
+}
+
+/* Footer */
+/* For this one i basically copy/pasted from the navigation bar */
+footer {
+    width: 100%;
+    background-color: hsl(342, 100%, 77%);
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    padding: 1em;
+}
+
+footer div a {
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+    transition: all 0.3s ease;
+    padding: 0.5em;
+}
+
+footer div a:hover {
+    color: white;
+    background-color: hsl(342, 66%, 54%);
+    border-radius: 1.9em;
+}
